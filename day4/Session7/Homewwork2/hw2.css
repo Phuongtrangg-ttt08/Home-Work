@@ -1,0 +1,55 @@
+nav>ul{
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    background-color: #08c;
+    height: 45px;
+    margin: 0;
+   
+}
+nav>ul>li {
+    height: 45px;
+    position: relative;
+}
+nav>ul>li>a{
+    color: #fff;
+    cursor: pointer;
+    line-height: 45px;
+    padding: 0 10px;
+}
+nav>ul>li:hover{
+    background-color: rgb(0, 121, 181);
+}
+.childs {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    min-width: 180px;
+}
+nav>ul>li:hover .childs{
+    display: block;
+}
+nav>ul>li:hover .childs a{
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    padding: 0 10px;
+}
+nav>ul>li:hover .childs a:hover{
+    color: #08c;
+}
+.fixed {
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    bottom: 30px;
+}
+.view {
+    color: red;
+    font-weight: bold;
+}
+
