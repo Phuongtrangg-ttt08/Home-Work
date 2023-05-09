@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div style="text-align: center;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction()">Nhấn đi</button>
+    </div>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text = "Bạn có chắc chắn muốn xóa record này không ?";
+  if (confirm(text) == true) {
+    text = "Bạn đã chọn OK";
+  } else {
+    text = "Bạn đã chọn HỦY";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

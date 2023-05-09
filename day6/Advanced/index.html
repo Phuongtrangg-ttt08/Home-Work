@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button1 {
+            width: 90px;
+            height: 35px;
+            background-color: rgb(156, 205, 233);
+            border: 1px solid rgb(156, 205, 233);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;" id="head">Javascript Basic</h1>
+
+    <div style="text-align: center;">
+        <div>
+            <img style="width: 800px;height: 500px;" id='mainImg' src="cake.png">
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <div > 
+                <input class="button1" type='button' value='PREVIOUS' name='next' onclick="arr.next('mainImg')" />
+            </div>
+            <div style="margin-left: 15px;">
+                <input class="button1" type='button' value='NEXT' name='prev' onclick="arr.prev('mainImg')" />
+            </div>
+        </div>
+    </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    let arr = new collection(['https://images2.thanhnien.vn/uploaded/ngocthanh/2020_10_10/3-5b5187975dchuamotcot2008nguyenvanku_IGNY.jpg?width=500', 'https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/07/ho-hoan-kiem-1.png', "https://statics.vinpearl.com/cau-rong-da-nang-3_1629438765.png",
+"https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/08/hoi-an-quang-nam-vntrip.jpg","https://statics.vinpearl.com/cau-trang-tien-hue-1_1624875771.jpg"]);
+    function collection(imgs) {
+    this.imgs = imgs;
+    this.i = 0;
+
+    this.next = function(element) {
+        let img = document.getElementById(element);
+        
+        this.i++;
+        if (this.i >= imgs.length) {
+        this.i = 0;
+        }
+
+        img.src = imgs[this.i];
+    };
+    
+    this.prev = function(element) {
+        let img = document.getElementById(element);
+    
+        this.i--;
+        if (this.i < 0) {
+        this.i = imgs.length - 1;
+        }
+    
+        img.src = imgs[this.i];
+  };
+  
+  this.next("mainImg"); // to initialize with some image
+}
+    </script>
+</body>
+</html>

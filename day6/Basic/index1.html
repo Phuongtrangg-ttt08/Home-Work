@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div style="text-align: center;">
+    <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction()">Nhấn đi</button>
+</div>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+function myFunction() {
+  let usename = prompt("tên của bạn là:");
+  let password = prompt("mật khẩu là:");
+  if (usename != null) {
+    document.getElementById("demo").innerHTML =
+    "tên của bạn là: " + usename;
+  }
+  if (password != null) {
+    document.getElementById("demo1").innerHTML =
+    "mật khẩu là: " + password;
+  }
+}
+</script>
+
+</body>
+</html>
