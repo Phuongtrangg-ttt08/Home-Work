@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div style="text-align: center;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction1()">Task 1</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction2()">Task 2</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction3()">Task 3</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction3Switch()">Task 3 Switch</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction4()">Task 4</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction5()">Task 5</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction6()">Task 6</button>
+    </div>
+<p id="demo"></p>
+</head>
+<body>
+    <script language = "JavaScript">
+        //Task 1
+    function myFunction1(){
+      let mediumScore= prompt("Điểm trung bình của bạn là:");
+        if (mediumScore >= 9){
+            text = "Xuất sắc";
+        }
+        else if (9 > mediumScore && mediumScore >= 8){
+            text = "Giỏi";
+        }
+        else if (8 > mediumScore && mediumScore >= 6.5){
+            text= "Khá";
+        }
+        else if (6.5 > mediumScore && mediumScore >= 5){
+            text= "Trung bình";
+        } else {
+            text= "Yếu";
+        }
+     document.getElementById("demo").innerHTML = text;
+    }
+       //Task 2
+     function myFunction2(){
+        let number= prompt("Số chữ điện trong tháng là:");
+        if (number < 100){
+            text = "Giá:550 đồng/chữ";
+        }
+        else if (100 <= number && number < 150){
+            text = "Giá:900 đồng/chữ";
+        }
+        else if (150 <= number && number < 200){
+            text = "Giá:1210 đồng/chữ";
+        }
+        else if (200 <= number && number < 300){
+            text = "Giá:1340 đồng/chữ";
+        }else {
+            text = "Giá:1400 đồng/chữ";
+        }
+    document.getElementById("demo").innerHTML = text;
+    }
+        //Task 3
+    function myFunction3(){
+        let month= prompt("Vui lòng nhập tháng vào đây:");
+        if(month == 1 || month == 2 || month == 3){
+           text = "XUAN";
+        }
+        else if(month == 4 || month == 5 || month == 6){
+            text = "HA";
+        }
+        else if(month == 7 ||month == 8 || month == 9){
+            text = "THU";
+        }else if(month == 10 ||month == 11 || month == 12){
+            text = "DONG";
+        }else {
+            text = "Chỉ có 12 tháng !";
+        }
+    document.getElementById("demo").innerHTML = text;
+        }
+    
+    </script>
+
+    <script>
+        // task 3 switch
+        function myFunction3Switch() {
+            let x = prompt("Vui lòng nhập tháng vào đây:");
+            switch (x) {
+            case "1":case "2":case "3":
+                text = "XUAN";
+                break;
+            case "4":case "5":case "6":
+                text = "HA";
+                break;
+            case "7":case "8":case "9":
+                text = "THU";
+                break;
+            case "10":case "11":case "12":
+                text = "DONG";
+                break;
+            default:
+                text = "Chỉ có 12 tháng !"; 
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+        
+    </script>
+    
+   
+     <script>
+        function myFunction4() {
+            //Task 4
+            let height = prompt("Nhập số hàng mong muốn: ");
+                for (let i = height; i >= 1; i--) {
+                    let row = '';
+                    for (let j = 1; j <= i; j++) {
+                        row += '*';
+                    }
+                    console.log(row);
+                }
+        }
+       
+    </script>
+
+<script>
+    function myFunction5() {
+        //Task 5
+        let x = 0;
+        for (let i = 1; i <= 9; i++) {
+            for (let j = 2; j <= 9; j++) {
+                x = j + "x" + i + "=" + (j * i);
+                console.log(x);
+            }
+        }
+    }
+    
+</script>
+
+<script>
+    function myFunction6() {
+        //Task 6
+        let x = prompt("VIRTUAL ATM -- ấn N: Để nộp tiền -- ấn R: Để rút tiền -- ấn X: Để xem số dư");
+        let money = 1000000;
+            switch (x) {
+            case "R":
+               let rut = prompt("Nhập số tiền cần rút:");
+               const rutParse = parseInt(rut);
+                if((money - rutParse) >= 0 && (money - rutParse) % 50 == 0){
+                    text = "Giao dịch thành công!"
+                }else{
+                    text = "Giao dịch thất bại!"
+                }
+                break;
+            case "N":
+                let nop = prompt("Số tiền mà bạn muốn nộp là:");
+                const nopParse = parseInt(nop);
+                text = "Giao dịch thành công! Số tiền hiện tại là:" + (money + nopParse);
+                break;
+            case "X":
+                text = "Số tiền bạn có là:" + money;
+                break;
+            default:
+                text = "VIRTUAL ATM Xin chào quý khách !"; 
+            }
+            document.getElementById("demo").innerHTML = text;
+    }
+    
+</script>
+</body>
+</html>
