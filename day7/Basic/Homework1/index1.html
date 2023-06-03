@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id="demo"> </p>
+    <div style="text-align: center;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction1()">Task 1</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction2()">Task 2</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction3()">Task 3</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction4()">Task 4</button>
+    </div>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script language = "JavaScript">
+        //Task 1
+        function myFunction1(){
+        let useName= prompt("Vui lòng nhập tên của bạn:");
+        let passWord= prompt("Vui lòng nhập mật khẩu của bạn;"); 
+            if(useName === "aptech" &&  passWord === "38yenbai"){
+                text = "Bạn đã đăng nhập thành công";
+            }else{
+                text = "Usename hoặc passWord không hợp lệ";
+            }
+         document.getElementById("demo").innerHTML = text;
+        }
+        //Task 2
+        function myFunction2(){
+            let deLete= prompt("Bạn có chắc chắn muốn xóa record này không ?");
+            if (deLete === "OK"){
+                text = "Đã xóa";
+            }else{
+                text = "Không xóa";
+            }
+        document.getElementById("demo").innerHTML = text;
+            }
+    </script>
+        
+    <script type="text/javascript">
+        //Task 3
+        function myFunction3(){
+            let arrNumber = [ 1, 2, 3, 4, 5, 6 ];
+            console.log(arrNumber[0]);
+            console.log(arrNumber);
+            console.log(arrNumber.length)
+            for(let i of arrNumber) {
+                console.log(i);
+            }
+        }
+    </script>
+
+<script type="text/javascript">
+    //Task 4
+    function myFunction4(){
+        let nameCar = [ "VinFast", "Mazda", "Toyota", "Mercedes-benz", "Lexus" ];
+        for(let i of nameCar) {
+            console.log(i);
+        }
+        nameCar.splice(1, 1, "Porscher");
+        console.log(nameCar);
+
+        let nameCar1 = [ "VinFast", "Mazda", "Toyota", "Mercedes-benz", "Lexus" ];
+        nameCar1.push("Hyundai");
+        console.log(nameCar1);
+
+        let cars = nameCar.concat(nameCar1);
+        console.log(cars);
+    }
+</script>
+</body>
+</html>

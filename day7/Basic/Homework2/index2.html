@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div id="car_list"></div>
+</head>
+<div style="text-align: center;">
+    <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction1()">Task 1</button>
+</div>
+<div id="car_list"></div>
+<script  language = "JavaScript"> 
+       //Task 1
+    function myFunction1() {
+        const cars = ['Toyota', 'Honda', 'Kia', 'BMW', 'Audi', 'Mitsubishi'];
+        const carListDiv = document.getElementById("car_list");
+        cars.forEach(car => {
+            const carDiv = document.createElement("div");
+            carDiv.textContent = car;
+            carListDiv.appendChild(carDiv);
+        });
+    }
+</script>
+<body>
+    
+</body>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap Demo</title>
+    <link rel="stylesheet" href=""><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="https://icons.getbootstrap.com/">
+</head>
+<style>
+.body-image{
+        background-image: url(" https://theme.nileforest.com/html/philos/img/slide-img/slide_bg2.jpg");
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+.body-text{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+</style>
+</head>
+<header>
+    <div style="display: flex;justify-content: space-between; margin: 30px;">
+        <div>
+            <a class="btn btn-primary">Start Bootstrap</a>
+        </div>
+        <div>
+            <a class="btn btn-primary">Sign Up</a>
+        </div> 
+    </div>    
+<div class="body-image">
+    <div class="body-text">
+<h1 style="color:white;font-size: 50px;">Generate more leads with a professional landing page!</h1>
+    <div class="row">
+        <div class="col">
+            <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+            <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+            <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+        </div>
+        <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+    </div>
+</div>
+</div>
+<body>
+</header>      
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+  <svg xmlns="http://www.w3.org/2000/svg"  text="center" width="40" height="40" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+    <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+    <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+  </svg>
+  <h3>Fully Responsive</h3>
+  <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+  </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+  <svg xmlns="http://www.w3.org/2000/svg" text="center" width="40" height="40" fill="currentColor" class="bi bi-layers" viewBox="0 0 16 16">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <h3>Bootstrap 5 Ready</h3>
+  <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
+  </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+  <svg xmlns="http://www.w3.org/2000/svg" text="center" width="40" height="40" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
+    <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+    <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
+  </svg>
+  <h3>Easy to Use</h3>
+  <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+    </div>
+    </div>
+  </div>
+</div>
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('https://viendidong.com/wp-content/uploads/2022/03/ve-sinh-ong-kinh-camera-iphone-01.jpg'); height: 400px "></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Fully Responsive Design</h2>
+                <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('https://cmcglobal.com.vn/wp-content/uploads/2020/11/Rectangle-377-2.png'); height: 400px "></div>
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>Updated For Bootstrap 5</h2>
+                <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('https://didongviet.vn/dchannel/wp-content/uploads/2021/10/laptop-refurbished-mua-o-dau-anh-dai-dien-didongviet.png'); height: 400px "></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Easy to Use & Customize</h2>
+                <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h1>What people are saying...</h1>
+<section class="features-img bg-light text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-icons-img mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-1.jpg"/>
+                    <h3>Margaret E.</h3>
+                    <p class="lead mb-0">"This is fantastic! Thanks so much guys!"</p>
+                </div>
+            </div>
+                <div class="col-lg-4">
+                    <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-2.jpg"/>
+                    <h3>Fred S.</h3>
+                    <p class="lead mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            </div>
+            <div class="col-lg-4">
+                    <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-3.jpg"/>
+                 <h3>Sarah W.</h3>
+                    <p class="lead mb-0">"Thanks so much for making these free resources available to us!"</p>
+            </div> 
+    </div>
+</div>
+</section>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</header>
+</body>
+</html>

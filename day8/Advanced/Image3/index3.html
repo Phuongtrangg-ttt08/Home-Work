@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div style="text-align: center;">
+    <button style="width: 90px;height: 35px;background-color: rgb(156, 205, 233);border: 1px solid rgb(156, 205, 233);" onclick="myFunction1()">Task 1</button>
+</div>
+<style>
+        .input-row{
+            display: flex;
+            margin: 5px 0;
+        }
+        .input-row>label{
+            min-width: 120px;
+        }
+
+        form input, form select, form textarea{
+            border: 1px solid #c2c2c2;
+            border-radius: 10px;
+            padding: 10px 10px;
+        }
+        .input-file {
+            border: none;
+        }
+        button, .btn{
+            background-color: #ddd;
+            color: #111;
+            padding: 10px 10px;
+            border-radius: 4px;
+            border: 1px solid #b1b1b1;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .btn-submit {
+            background-color: #f80;
+            color: #fff;
+            border: 1px solid #f80;
+        }
+
+        .vertical-form .input-row {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .vertical-form .input-row.input-inline {
+            flex-direction: row;
+        }
+        .input-error input{
+            border: 1px solid red;
+        }
+
+        .input-error .input-msg{
+            color: red;
+            display: block;
+            clear: both;
+        }    
+
+    </style>
+<body>
+    <h1>Forms: Vadidation , Styling & Semantics</h1>
+         <form action="" method="post">
+        <div class="input-row">
+            <label for="username">Name</label>
+            <input autocomplete="on" type="text" id="username" name="username" placeholder="ex.John f.Kennedy">
+        </div>
+        <div class="input-row">
+            <label for="username">Occupation</label>
+            <input autocomplete="on" type="text" id="username" name="username" >
+        </div>
+        <div class="input-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="input-row">
+            <label for="password">Confirm Email Adress</label>
+            <input type="password" id="password" name="password" >
+        </div>
+        <div class="input-row">
+            <label for="tel">Number</label>
+            <input type="tel" id="tel" name="tel">
+        </div>
+        <div class="input-row">
+            <label for="tel">Date</label>
+            <input type="tel" id="tel" name="tel" >
+
+        </div>
+        <div class="input-row">
+            <label for="tel">Password</label>
+            <input type="tel" id="tel" name="tel" >
+        </div>
+        <div class="input-row">
+            <label for="tel">Repect Password</label>
+            <input type="tel" id="tel" name="tel" >
+        </div>
+        <div class="input-row">
+            <label for="tel">Telephone</label>
+            <input type="tel" id="tel" name="tel" >
+        </div>
+        <div class="input-row">
+            <label for="tel">Drop Down Selection</label>
+            <input type="tel" id="tel" name="tel" placeholder="--None--">
+        </div>
+        <div class="input-row">
+            <label for="tel">Url</label>
+            <input type="url" id="tel" name="tel" placeholder="https://google.com/" name="website" required />
+        </div>
+        <div class="input-row">
+            <label for="tel">Multified</label>
+            <input type="tel" id="tel" name="tel" >
+        </div>
+        <div class="input-row">
+            <label for="tel">Message</label>
+            <input type="tel" id="tel" name="tel" placeholder="Message">
+        </div>
+        <div class="input-row">
+            <label for="rule"><input type="checkbox" name="rule" id="rule" value="1"> Tôi đã đọc và đồng ý các điều khoản sử dụng.</label>
+        </div>
+        <input class="input-file" type="file" name="photo" id="photo">
+        <div class="form_action">
+            <button class="btn btn-submit" type="submit">Đăng ký</button>
+            <button class="btn" type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
